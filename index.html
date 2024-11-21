@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Network Visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <label for="force-strength">Force Strength:</label>
+            <input type="range" id="force-strength" min="-300" max="300" value="-50">
+            <label for="collision-radius">Collision Radius:</label>
+            <input type="range" id="collision-radius" min="10" max="50" value="20">
+            <label for="link-strength">Link Strength:</label>
+            <input type="range" id="link-strength" min="0.1" max="2" step="0.1" value="1">
+        </div>
+        <div id="tooltip" class="tooltip"></div>
+        <svg id="network"></svg>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
